@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome To Mother, Baby And Adolescent Care Global Foundation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="https://kit.fontawesome.com/3543673960.js" crossorigin="anonymous"></script>
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {
+    font-size:16px;
+    height: 100%;
+    background-image: url(img/background1.png);
+    background-size: cover;
+}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+      <img src="img/M&B logo.png" alt="M&B logo" class="logo">
+    <h3 class="w3-padding-32"><b>Mothers Care<br>Babies Care</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery >></a> 
+    <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">What We Do >></a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact >></a>
+    <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Funds And Partners >></a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white current">About >></a>
+
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Welcome To Our Foundation </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<div class="main" id="about">
+
+    <!-- Services -->
+    <div class="contentinit">
+  <div class="w3-container" id="" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About Us</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <div class="w3-col w3-margin-bottom">
+        <div class="w3-light-grey" style="border-radius: 4%;">
+        <p style="padding: 2rem; padding-bottom: 3rem;"><span style="font-size: 3rem;"> W</span>e, the members of the above mentioned Non-Governmental/Non-Profit Making/Charity Organisation wish to give you a brief update of our achievements. Founded in 2008, with the passion to help the less priviledged and reduce maternal and perinatal mortality. <b>Dedicated to my fellow human beings especially mother, baby and adolescent who had, are, is and will suffer/suffered/sufferring physically, mentally, socially, economically, educationally or died because of the scourge of disease, illeteracy, poverty and/or ignorance. </b>Dr. Eli Sukarime.
+        <br> At Mother, Baby and Adolescent Care Global Foundation, we have been providing affordable primary healthcare to low income and unpreviledged communitites in Rivers State.
+            <br><br>
+            Mother, Baby And Adolescent Care Global Foundation is an organization striving to address the gap in the availabilty of low cost primary for rural and urban under previlidged communites.
+        </p>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Services -->
+  <div class="contentinit">
+    <div class="w3-container" id="" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>About The Founder</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div class="w3-col w3-margin-bottom">
+        <div class="w3-light-grey">
+          <img src="img/eli2.jpg" alt="Doctor Eli" style="width:50%;height:50%;">
+          <div class="w3-container">
+            <h3>Dr. Eli Sukarime</h3>
+          </div>
+        </div>
+      <p>Dr. Eli Sukarime is a Consultant, Obstetrician and Gynaecologist based in Port Harcourt, Nigeria. He graduated from the University of Benin, Nigeria with the degree in medicine and surgery. He is a volunterer lecturer to the Residents in the Department of Obstetrics and Gynaecology, Rivers State University Teaching Hospital. He is the president and editor-in-chief of Greener Journal of Medical Sciences International, Assistant editor of Pacific International Journal and reviewer Of Nigeria Journal of Medicine. He has over 80 publications - local and international journals. He is the Executive Director/ CEO of Mother, Baby and Adolescent Care Global Foundation. Also, consultant Gynaecology, Military Hospital and First Rivers Hospital, Rivers State, Nigeria. 
+      </p>
+    </div>
+    </div>
+</div>
+
+<footer style="height: 70px;" class="w3-red">
+  <p>&copy; 2021 <br> And Babies Care Global Foundation. </p>
+</footer>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+    </script>
+    
+</body>
+</html>

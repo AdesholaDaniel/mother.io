@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome To Mothers And Babies Care Foundation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<script src="https://kit.fontawesome.com/3543673960.js" crossorigin="anonymous"></script>
+
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {
+    font-size:16px;
+    height: 100%;
+    background-image: url(img/background1.png);
+    background-size: cover;
+}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+      <img src="img/M&B logo.png" alt="M&B logo" class="logo">
+    <h3 class="w3-padding-32"><b>Mothers Care<br>Babies Care</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="gallery.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Gallery >></a> 
+    <a href="services.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services >></a> 
+    <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white current">Contact >></a>
+    <a href="donate.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Funds And Partners >></a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About >></a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Welcome To Our Foundation </span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<div class="main">
+
+  
+  <div class="contentinit">
+
+    <div class="w3-container" id="ourmission" style="margin-top:75px">
+      <div class="contact1">
+        <a href="#" class="icon">
+          <i class="fas fa-phone fa-4x" style="color: crimson;"></i>
+        </a>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Call</b></h1>
+        <p style="text-align: center;">+234 803 085 2999</p>
+
+        <a href="#" class="icon">
+          <i class="fab fa-whatsapp fa-4x" style="color: green;"></i>
+        </a>
+        <h1 class="w3-xxxlarge w3-text-red"><b>WhatsApp Us</b></h1>
+        <p style="text-align: center;">+234 806 452 9884</p>
+
+
+      <a href="elisukarime@gmail.com" class="icon">
+        <i class="fas fa-mail-bulk fa-4x" style="color: blue;"></i>
+      </a>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Mail Us</b></h1>
+      <p style="text-align: center;">elisukarime@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="w3-container" id="ourmission" style="margin-top:75px">
+      <div class="contact1">
+        <a href="#" class="icon">
+          <i class="fas fa-search-location fa-4x" style="color: yellow;"></i>
+        </a>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Locate Us</b></h1>
+    <h4>Office Address:</h4> <p style="color: white;">C/o Suites 18/19, Peace Plaza, 155 NTA-Road, Mgbuoba, Port Harcourt</p> <br><br>
+    </div>
+    </div>
+
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Get In Touch</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p></p>
+    <form action="https://formspree.io/f/mjvjwnrj" method="POST" id="my-form">
+      <div class="w3-section">
+        <label for="Name"> Full Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label for="Email">Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div> 
+      <div class="w3-section">
+        <label for="Message">Message</label>
+        <textarea class="w3-input w3-border" id="message" cols="20" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+  <div id="status"></div>
+  </div>
+</div>
+
+<div class="contentinit">
+  <div class="address">
+    <h5>Office Address:</h5> <p>Ozuoba, NTA Road. Port Harcourt, Nigeria.</p> <br><br>
+    <h5>Telephone Address:</h5> <p></p>+234 233 2334 1312  +234 233 2334 1312  +234 233 2334 1312. </p>
+  </div>
+      <div class="links">
+        <a href="#" method="POST" class="icon">
+            <i class="fab fa-twitter fa-3x"></i>
+        </a>
+        <a href="https://web.facebook.com/mbcaref" method="POST" class="icon">
+              <i class="fab fa-facebook fa-3x"></i>
+        </a>
+        <a href="#" method="POST" class="icon">
+              <i class="fab fa-linkedin fa-3x"></i>
+        </a>
+        <a href="https://www.instagram.com/mbglobalfoundation/" method="POST" class="icon">
+              <i class="fab fa-instagram fa-3x"></i>
+        </a>
+      </div>
+</div>
+
+
+<footer style="height: 70px;" class="w3-red">
+  <div>
+    <p>&copy; 2021 <br> And Babies Care Global Foundation. </p>
+  </div>
+</footer>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("myOverlay").style.display = "block";
+    }
+     
+    function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // For the respone of the form that is submitted
+
+    window.addEventListener("DOMContentloaded", function () {
+
+var form = document.getElementById("my-form");
+
+var status = document.getElementById("status");
+
+function success() {
+    form.requestFullscreen();
+    status.innerHTML = "Thanks";
+}
+function error() {
+    status.innerHTML = "OOps! There was a problem.";
+}
+
+form.adEeventListener("submit", function (ev) {
+    ev.preventDefault();
+    var data = new FormData(form);
+    ajax(form.method, form.action, data, success, error);
+});
+});
+
+
+function ajax(method, url, data, success, error) {
+var xhr = new XMLHttpRequest();
+xhr.open(method, url);
+xhr.setRequestHeader("Accept", "application/json");
+xhr.onreadystatechange = function () {
+    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+    if (xhr.status === 200) {
+        success(xhr.response, xhr.responseType);
+    } else {
+        error(xhr.status, xhr.response, xhr.responseType);
+    }
+};
+xhr.send(data);
+}
+
+    </script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
